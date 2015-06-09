@@ -16,11 +16,11 @@ debugLayer
 // creation de l'actor qui represéntera le vaisseau du joueur
 set player = gameLayer.createActor("player");
 
-// le vaisseau aura des interaction avec d'autres objets
-player.typeDynamic().hitSquare(0);
-
 // On le place au centre pour démarrer
 player.move(stage.getWidth()/2, stage.getHeight()/2);
+
+// le vaisseau aura des interaction avec d'autres objets
+player.typeDynamic().hitSquare(0);
 
 // gestion des actions du clavier
 stage.onKeyPulse((ch) {
