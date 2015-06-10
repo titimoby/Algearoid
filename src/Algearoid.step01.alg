@@ -20,7 +20,7 @@ set player = gameLayer.createActor("player");
 player.move(stage.getWidth()/2, stage.getHeight()/2);
 
 // le vaisseau aura des interaction avec d'autres objets
-player.typeDynamic().hitSquare(0);
+player.typeDynamic().hitSquare();
 
 // gestion des actions du clavier
 stage.onKeyPulse((ch) {
