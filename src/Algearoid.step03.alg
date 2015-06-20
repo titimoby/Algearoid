@@ -44,6 +44,17 @@ set limiteRotation = function(valeur) {
 	return valeur;
 }
 
+set verifierXY = function() {
+	set playerX = player.getX();
+	set playerY = player.getY();
+	
+	if (playerX <= 0) {
+		player.setX(stage.getWidth());
+	}
+};
+
+player.onPulse(verifierXY, 150);
+
 // gestion des actions du clavier
 stage.onKeyPulse((ch) {
 	// si on utilise la flèche gauche
