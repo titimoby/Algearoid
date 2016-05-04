@@ -49,7 +49,9 @@ set verifierXY = function() {
 	set playerY = player.getY();
 	
 	if (playerX <= 0) {
+		player.isDisable();
 		player.setX(stage.getWidth());
+		player.enablePhysic();
 	}
 };
 
